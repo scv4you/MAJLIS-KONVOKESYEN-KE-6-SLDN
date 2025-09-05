@@ -8,8 +8,26 @@
   <style>
     body {
       background-color: #3d1110;
+      background-image: url("CONVOCATION (1).png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       text-align: center;
       padding: 20px;
+      position: relative; /* Needed for overlay */
+      z-index: 0;
+    }
+
+    /* Overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+      z-index: -1; /* Keep behind content */
     }
 
     /* Banner styling */
@@ -29,7 +47,6 @@
       font-weight: bold;
       border-radius: 10px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-      text-transform: uppercase;
       display: inline-block;
       color: white;
       text-decoration: none;
@@ -73,23 +90,27 @@
       <!-- Mobile banner (replace with your smaller image) -->
       <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/refs/heads/main/FRONT%20PAGE%20%20(5).png">
       <!-- Desktop banner -->
-      <img src="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/refs/heads/main/FRONT%20PAGE%20%20(2).png" alt="Event Banner">
+      <img src="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/refs/heads/main/FRONT%20PAGE%20%20(5).png" alt="Event Banner">
     </picture>
   </div>
 
   <!-- Action Buttons -->
-  <div>
+<div>
     <a href="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/main/TENTATIF%20PROGRAM.jpg" target="_blank" class="btn btn-blue btn-custom">
-      Atur Cara Majlis
+      Aturcara Majlis Konvokesyen
     </a>
     <a href="BUKU PROGRAM DIGITAL.pdf" target="_blank" class="btn btn-orange btn-custom">
-      Buku Program Digital
+      Buku Digital (E-Book) Konvokesyen
     </a>
   </div>
 
   <!-- Footer -->
   <footer class="mt-5">
-    <p>&copy; 2025 SLDN KONVOKESYEN.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p>&copy; 2025 SLDN KONVOKESYEN.</p>
   </footer>
 
   <!-- Bootstrap JS -->
@@ -99,5 +120,6 @@
 
 </body>
 </html>
+
 
 
