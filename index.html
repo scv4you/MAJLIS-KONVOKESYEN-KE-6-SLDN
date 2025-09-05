@@ -16,7 +16,7 @@
     .banner img {
       max-width: 100%;
       border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       margin-bottom: 25px;
       height: auto;
     }
@@ -28,17 +28,26 @@
       font-size: 18px;
       font-weight: bold;
       border-radius: 10px;
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
       text-transform: uppercase;
       display: inline-block;
       color: white;
       text-decoration: none;
     }
 
-    .btn-blue { background-color: #f5d182; }
-    .btn-blue:hover { background-color: #e6be68; }
-    .btn-orange { background-color: #e06d2f; }
-    .btn-orange:hover { background-color: #c95b1f; }
+    .btn-blue {
+      background-color: #f5d182;
+    }
+    .btn-blue:hover {
+      background-color: #e6be68;
+    }
+
+    .btn-orange {
+      background-color: #e06d2f;
+    }
+    .btn-orange:hover {
+      background-color: #c95b1f;
+    }
 
     footer {
       margin-top: 40px;
@@ -47,7 +56,7 @@
       margin-bottom: 25px;
     }
 
-    /* Mobile adjustments */
+    /* Adjust buttons for smaller screens */
     @media (max-width: 768px) {
       .btn-custom {
         font-size: 16px;
@@ -58,22 +67,22 @@
 </head>
 <body>
 
-  <!-- Responsive Banner -->
+  <!-- Responsive Event Banner -->
   <div class="banner mb-4">
     <picture>
-      <!-- Mobile version -->
+      <!-- Mobile banner (replace with your smaller image) -->
       <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/refs/heads/main/FRONT%20PAGE%20%20(5).png">
-      <!-- Desktop version -->
+      <!-- Desktop banner -->
       <img src="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/refs/heads/main/FRONT%20PAGE%20%20(2).png" alt="Event Banner">
     </picture>
   </div>
 
-  <!-- Buttons -->
+  <!-- Action Buttons -->
   <div>
-    <a href="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/refs/heads/main/TENTATIF%20PROGRAM.jpg" target="_blank" class="btn btn-blue btn-custom">
+    <a href="https://raw.githubusercontent.com/scv4you/KONVOKESYEN-SLDN-2025/main/TENTATIF%20PROGRAM.jpg" target="_blank" class="btn btn-blue btn-custom">
       Atur Cara Majlis
     </a>
-    <a href="BUKU PROGRAM DIGITAL" target="_blank" class="btn btn-orange btn-custom">
+    <a href="BUKU PROGRAM DIGITAL.pdf" target="_blank" class="btn btn-orange btn-custom">
       Buku Program Digital
     </a>
   </div>
@@ -90,4 +99,3 @@
 
 </body>
 </html>
-
